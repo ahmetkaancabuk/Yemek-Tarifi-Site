@@ -1,0 +1,6 @@
+@Yemek_Tarifi_Site_HostAddress = http://localhost:5062
+
+GET {{Yemek_Tarifi_Site_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
