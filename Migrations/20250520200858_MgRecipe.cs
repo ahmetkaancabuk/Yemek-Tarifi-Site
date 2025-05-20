@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Yemek_Tarifi_Site.Migrations
 {
     /// <inheritdoc />
-    public partial class DbRecipe : Migration
+    public partial class MgRecipe : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,12 +20,15 @@ namespace Yemek_Tarifi_Site.Migrations
                 {
                     RecipeId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    RecipeName = table.Column<string>(type: "longtext", nullable: true)
+                    RecipeName = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    RecipeExp = table.Column<string>(type: "longtext", nullable: true)
+                    RecipeExp = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    RecipeMaterial = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                    RecipeMaterial = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    RecipeHowPerson = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    RecipePrepTime = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
