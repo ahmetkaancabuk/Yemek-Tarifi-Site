@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Yemek-Tarifi-Site")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9450e48fd36c84ca65316b2370d3fba7cf1fe890")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55b7e30133129d0378d427718e9b8d9306edf000")]
 [assembly: System.Reflection.AssemblyProductAttribute("Yemek-Tarifi-Site")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Yemek-Tarifi-Site")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

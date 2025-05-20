@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\basci\\Documents\\Github\\Yemek-Tarifi-Site\\Yemek-Tarifi-Site.csproj": {}
+    "C:\\Users\\basci\\Documents\\GitHub\\Yemek-Tarifi-Site\\Yemek-Tarifi-Site.csproj": {}
   },
   "projects": {
-    "C:\\Users\\basci\\Documents\\Github\\Yemek-Tarifi-Site\\Yemek-Tarifi-Site.csproj": {
+    "C:\\Users\\basci\\Documents\\GitHub\\Yemek-Tarifi-Site\\Yemek-Tarifi-Site.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basci\\Documents\\Github\\Yemek-Tarifi-Site\\Yemek-Tarifi-Site.csproj",
+        "projectUniqueName": "C:\\Users\\basci\\Documents\\GitHub\\Yemek-Tarifi-Site\\Yemek-Tarifi-Site.csproj",
         "projectName": "Yemek-Tarifi-Site",
-        "projectPath": "C:\\Users\\basci\\Documents\\Github\\Yemek-Tarifi-Site\\Yemek-Tarifi-Site.csproj",
+        "projectPath": "C:\\Users\\basci\\Documents\\GitHub\\Yemek-Tarifi-Site\\Yemek-Tarifi-Site.csproj",
         "packagesPath": "C:\\Users\\basci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basci\\Documents\\Github\\Yemek-Tarifi-Site\\obj\\",
+        "outputPath": "C:\\Users\\basci\\Documents\\GitHub\\Yemek-Tarifi-Site\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
