@@ -1,11 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <header>
+        <div class="max-w-screen md:mx-48 sm:px-4 h-[100px] bg-red-40 my-1">
+            <div class="row h-100">
+                <div class="col-8 flex flex-row align-items-center h-100">
+                    <a class="btn  p-4 rounded text-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"  aria-controls="offcanvasExample"> <i class="fa-solid fa-grip-lines"></i> </a>
+                    <img src="logomet.png" alt="" class="w-auto h-100">
+                </div>
+                <div class="col-2  flex align-items-center justify-content-center h-100">
+                    <a href="#" class="bg-red-400 p-4 rounded-2"><i class="fa-solid fa-utensils"></i> Tarif Gönder</a>
+                </div>
+                <div class="col-2  flex align-items-center justify-content-center h-100 gap-2">
+                    <i class="fa-solid fa-user"></i> <a href="#">Giriş Yap</a> / <a href="#">Kayıt Ol</a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <hr>
+    </header>
+
+   
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <main class="max-w-screen md:mx-48">
+        <div class="d-flex flex-wrap align-items-center mt-3">
+            <div class="border-top flex-grow-1"></div>
+            <h2 class="mx-3 mb-0  fs-2 text-center">Haftanın En Popüler Yemek Tarifi</h2>
+            <div class="border-top flex-grow-1"></div>
+        </div>
+        <div id="customCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+
+
+                <div class="carousel-item active">
+                    <div class="container mt-4">
+                        <div class="row">
+                            <!-- Sol taraf büyük resim -->
+                            <div class="col-md-8">
+                                <img src="kunefe-7.png" alt="Yemek Resmi" class="h-100 img-fluid rounded" />
+                            </div>
+
+                            <!-- Sağ taraf kart gibi bilgi -->
+                            <div class="col-md-4 d-flex flex-column">
+
+
+                                <div class="row h-100 flex flex-column">
+                                    <div class="col-12 ">
+                                        <div class="p-3  h-36 align-items-center flex">
+                                            <h3 class="text-4xl">Lorem ipsum dolor sit amet consectetur.</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="p-3  h-20 align-items-center flex">
+                                            <h5 class="text-2xl">Yemek Kategorisi</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="p-3  h-48">
+                                            <p>Açıklama buraya gelecek...</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="p-3  h-24 align-items-center flex ">
+                                            <p><strong>Yapan kişi:</strong> İsim</p>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item ">
+                    <div class="container mt-4">
+                        <div class="row">
+                            <!-- Sol taraf büyük resim -->
+                            <div class="col-md-8">
+                                <img src="ekler-one-cikan-yeni1.png" alt="Yemek Resmi"
+                                    class="h-100 img-fluid rounded" />
+                            </div>
+
+                            <!-- Sağ taraf kart gibi bilgi -->
+                            <div class="col-md-4 d-flex flex-column">
+
+
+                                <div class="row h-100 flex flex-column">
+                                    <div class="col-12 ">
+                                        <div class="p-3  h-36 align-items-center flex">
+                                            <h3 class="text-4xl">Lorem ipsum dolor sit amet consectetur.</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="p-3  h-20 align-items-center flex">
+                                            <h5 class="text-2xl">Yemek Kategorisi</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="p-3  h-48">
+                                            <p>Açıklama buraya gelecek...</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="p-3  h-24 align-items-center flex ">
+                                            <p><strong>Yapan kişi:</strong> İsim</p>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Önceki</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#customCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Sonraki</span>
+                </button>
+            </div>
+        </div>
+        <!--Slider'ın Alt Tarafı-->
+        <div class="d-flex flex-wrap align-items-center my-5">
+            <div class="border-top flex-grow-1"></div>
+            <h2 class="mx-3 mb-0  fs-2 text-center">Tariflerimiz </h2>
+            <div class="border-top flex-grow-1"></div>
+        </div>
+        <div class="row  h-72">
+            <div class="col-md-4 ">
+                <div class="card w-100 col-md-4 rounded border-none">
+                <img src="ekler-one-cikan-yeni1.png" class="card-img-top p-0 m-0 img-fluid" alt="">
+                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card w-100 col-md-4 rounded border-none">
+                <img src="ekler-one-cikan-yeni1.png" class="card-img-top p-0 m-0 img-fluid" alt="">
+                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card w-100 col-md-4 rounded border-none">
+                <img src="ekler-one-cikan-yeni1.png" class="card-img-top p-0 m-0 img-fluid" alt="">
+                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
