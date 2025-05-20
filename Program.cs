@@ -4,16 +4,16 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddControllers(); // controllerları ekler
 
-// Swagger / OpenAPI ayarları
+// Swagger ayarları
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Yemek Tarifi API", Version = "v1" });
 });
 
-// DbContext MySQL bağlantısı
+// RecipeContext MySQL bağlantısı
 builder.Services.AddDbContext<RecipeContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -21,8 +21,10 @@ builder.Services.AddDbContext<RecipeContext>(options =>
 );
 
 var app = builder.Build();
+//Swagger controller
+app.MapControllers(); // controllerları route'a bağlar
 
-// HTTP pipeline konfigürasyonu
+// HTTP pipelinee 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
