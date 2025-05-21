@@ -1,15 +1,26 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MySqlConnector;
 
-namespace Yemek_Tarifi_Site.Models {
-    public class RecipeContext : DbContext {
-        public RecipeContext() { }
-        public RecipeContext(DbContextOptions<RecipeContext> options) : base (options) { }
+namespace Yemek_Tarifi_Site.Models
+{
+    // Kullanıcı modelini IdentityUser'dan türetiyoruz, ekstra alan ekleyebilirsin
+    public class ApplicationUser : IdentityUser
+    {
+        public string FullName { get; set; } = string.Empty;
+    }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    // DbContext, IdentityDbContext'ten türetiliyor ve kullanıcı modeli ApplicationUser
+    public class RecipeContext : IdentityDbContext<ApplicationUser>
+    {
+        public RecipeContext(DbContextOptions<RecipeContext> options) : base(options)
         {
-            optionsBuilder.UseMySql("server=127.0.0.1;port=3306;database=DbYemek;user=root;password=Metsy;", new MySqlServerVersion(new Version(8, 0, 42)));
+            
         }
+
+        // Tariflerin olduğu tablo
         public DbSet<Recipe> RecipeList { get; set; }
+
+        // Connection string ayarını Program.cs üzerinden yapacağından OnConfiguring kaldırıldı
     }
 }

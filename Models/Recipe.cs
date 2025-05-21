@@ -16,5 +16,8 @@ namespace Yemek_Tarifi_Site.Models
         public string? RecipeHowPerson { get; set; }
         [Required(ErrorMessage = "It should be known how much time it takes the recipe is for!")]
         public int? RecipePrepTime { get; set; }
+        public int? RecipeFallow { get; set; }
+        public string? ImageUrl { get; set; }
+        public int UserId { get; set; }
     }
 }

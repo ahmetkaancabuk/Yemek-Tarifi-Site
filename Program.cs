@@ -1,30 +1,36 @@
 using Microsoft.EntityFrameworkCore;
 using Yemek_Tarifi_Site.Models;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers(); // controllerları ekler
+// Controller servislerini ekle
+builder.Services.AddControllers();
+builder.Services.AddDbContext<RecipeContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+    new MySqlServerVersion(new Version(8, 0, 42))));
 
-// Swagger ayarları
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<RecipeContext>()
+    .AddDefaultTokenProviders();
+
+
+// Swagger/OpenAPI konfigürasyonu
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Yemek Tarifi API", Version = "v1" });
 });
 
-// RecipeContext MySQL bağlantısı
-builder.Services.AddDbContext<RecipeContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 42)))
-);
-
 var app = builder.Build();
-//Swagger controller
-app.MapControllers(); // controllerları route'a bağlar
 
-// HTTP pipelinee 
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
+
+// Geliştirme ortamında Swagger UI etkinleştir
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -34,8 +40,10 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.UseHttpsRedirection();
 
+app.MapControllers();
+
+// Örnek basit endpoint (isteğe bağlı)
 app.MapGet("/weatherforecast", () =>
 {
     var summaries = new[]
