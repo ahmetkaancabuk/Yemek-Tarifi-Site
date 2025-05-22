@@ -10,26 +10,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  main {
-    flex: 1 0 auto; /* Esnek büyüme */
-    min-height: 0; /* Flex konteynerlerde taşmayı önlemek için */
-  }
-</style>
+    
 </head>
 
 <body >
-
-    <header>
+    <div class="container-md">   <header>
         <div class="container ">
 
             <div class="navbar navbar-expand navbar-expand-lg">
@@ -71,132 +56,73 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
                         </div>
                         <div class="modal-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">Çorba</li>
-                                <li class="list-group-item">Ana Yemek</li>
-                                <li class="list-group-item">Tatlı</li>
-                                <li class="list-group-item">Kahvaltı</li>
-                                <li class="list-group-item">Salata</li>
-                            </ul>
+                            <div class="row gap-y-2">
+                                <div class="col-md-2 col-6"> 
+                                    <a href="#">
+                                        <div class="rounded bg-cover bg-center d-flex justify-content-center align-items-center h-[200px]" style="background-image: url(esmer-sekerli-brownie-kurabiye-tarifi.jpg);">
+                                            <p class="text-white fw-bold text-2xl">Hamurişi</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-6"> 
+                                    <a href="#">
+                                        <div class="rounded bg-cover bg-center d-flex justify-content-center align-items-center h-[200px]" style="background-image: url(esmer-sekerli-brownie-kurabiye-tarifi.jpg);">
+                                            <p class="text-white fw-bold text-2xl">Hamurişi</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-6"> 
+                                    <a href="#">
+                                        <div class="rounded bg-cover bg-center d-flex justify-content-center align-items-center h-[200px]" style="background-image: url(esmer-sekerli-brownie-kurabiye-tarifi.jpg);">
+                                            <p class="text-white fw-bold text-2xl">Hamurişi</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-6"> 
+                                    <a href="#">
+                                        <div class="rounded bg-cover bg-center d-flex justify-content-center align-items-center h-[200px]" style="background-image: url(esmer-sekerli-brownie-kurabiye-tarifi.jpg);">
+                                            <p class="text-white fw-bold text-2xl">Hamurişi</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-6"> 
+                                    <a href="#">
+                                        <div class="rounded bg-cover bg-center d-flex justify-content-center align-items-center h-[200px]" style="background-image: url(esmer-sekerli-brownie-kurabiye-tarifi.jpg);">
+                                            <p class="text-white fw-bold text-2xl">Hamurişi</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-6"> 
+                                    <a href="#">
+                                        <div class="rounded bg-cover bg-center d-flex justify-content-center align-items-center h-[200px]" style="background-image: url(esmer-sekerli-brownie-kurabiye-tarifi.jpg);">
+                                            <p class="text-white fw-bold text-2xl">Hamurişi</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-6"> 
+                                    <a href="#">
+                                        <div class="rounded bg-cover bg-center d-flex justify-content-center align-items-center h-[200px]" style="background-image: url(esmer-sekerli-brownie-kurabiye-tarifi.jpg);">
+                                            <p class="text-white fw-bold text-2xl">Hamurişi</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-6"> 
+                                    <a href="#">
+                                        <div class="rounded bg-cover bg-center d-flex justify-content-center align-items-center h-[200px]" style="background-image: url(esmer-sekerli-brownie-kurabiye-tarifi.jpg);">
+                                            <p class="text-white fw-bold text-2xl">Hamurişi</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    
-        <div class="container ">
-
-            <div class="d-flex flex-wrap align-items-center mt-4 col-12">
-                <div class="border-top flex-grow-1"></div>
-                <h2 class="mx-3 mb-0  fs-2 text-center">Haftanın En Popüler Yemek Tarifi</h2>
-                <div class="border-top flex-grow-1"></div>
-            </div>
-            <div id="customCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-                <div class="carousel-inner">
-
-
-
-                    <div class="carousel-item active">
-                        <div class="container mt-4">
-                            <div class="row">
-                                <!-- Sol taraf büyük resim -->
-                                <div class="col-md-8 col-12 max-h-[500px] min-h-[100px]">
-                                    <img src="esmer-sekerli-brownie-kurabiye-tarifi.jpg" alt="Yemek Resmi" class="    object-fit-cover img-fluid rounded h-100 w-100" />
-                                </div>
-
-                                <!-- Sağ taraf kart gibi bilgi -->
-                                <div class="col-md-4 col-12 d-flex flex-column">
-
-
-                                    <div class="row h-100 flex flex-column">
-                                        <div class="col-12 ">
-                                            <div class="p-3  max-h-36 min-h-auto align-items-center flex">
-                                                <h3 class="text-4xl">Lorem ipsum dolor sit amet consectetur.</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 ">
-                                            <div class="p-3  max-h-20 min-h-auto align-items-center flex">
-                                                <h5 class="text-2xl">Yemek Kategorisi</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 ">
-                                            <div class="p-3  max-h-48 min-h-auto">
-                                                <p>Açıklama buraya gelecek...</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 ">
-                                            <div class="p-3  max-h-24 min-h-auto align-items-center flex ">
-                                                <p><strong>Yapan kişi:</strong> İsim</p>
-                                            </div>
-                                        </div>
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="container mt-4">
-                            <div class="row">
-                                <!-- Sol taraf büyük resim -->
-                                <div class="col-md-8 col-12 max-h-[500px] min-h-[100px]">
-                                    <img src="ananas-shutter2.jpg" alt="Yemek Resmi"
-                                        class="object-fit-cover img-fluid rounded w-100 h-100" />
-                                </div>
-
-                                <!-- Sağ taraf kart gibi bilgi -->
-                                <div class="col-md-4 col-12 d-flex flex-column">
-
-
-                                    <div class="row h-100 flex flex-column">
-                                        <div class="col-12 ">
-                                            <div class="p-3  max-h-36 min-h-auto align-items-center flex">
-                                                <h3 class="text-4xl">Lorem ipsum dolor sit amet consectetur.</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 ">
-                                            <div class="p-3  max-h-20 min-h-auto align-items-center flex">
-                                                <h5 class="text-2xl">Yemek Kategorisi</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 ">
-                                            <div class="p-3  max-h-48 min-h-auto">
-                                                <p>Açıklama buraya gelecek...</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 ">
-                                            <div class="p-3  max-h-24 min-h-auto align-items-center flex ">
-                                                <p><strong>Yapan kişi:</strong> İsim</p>
-                                            </div>
-                                        </div>
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Önceki</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#customCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Sonraki</span>
-                    </button>
-                </div>
-
-            </div>
-            <div class="d-flex flex-wrap align-items-center my-5">
+        <div class="container min-h-screen">
+        <div class="d-flex flex-wrap align-items-center my-5">
             <div class="border-top flex-grow-1"></div>
             <h2 class="mx-3 mb-0  fs-2 text-center">Tariflerimiz </h2>
             <div class="border-top flex-grow-1"></div>
@@ -204,63 +130,136 @@
         <div class="row  h-autol">
             <div class="col-md-4 h-[500px]">
                 <div class="card w-100 col-md-4 rounded border-none h-[250px]">
-                <img src="guzelavrat-otu-shutter.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
-                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
-                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
-                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                    <img src="guzelavrat-otu-shutter.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
                 </div>
             </div>
             <div class="col-md-4 h-[500px]">
                 <div class="card w-100 col-md-4 rounded border-none h-[250px]">
-                <img src="ananas-shutter2.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
-                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
-                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
-                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                    <img src="ananas-shutter2.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
                 </div>
             </div>
             <div class="col-md-4 h-[500px]">
                 <div class="card w-100 col-md-4 rounded border-none h-[250px]">
-                <img src="esmer-sekerli-brownie-kurabiye-tarifi.jpg" class="card-img-top p-0 m-0 h-[1280px]" alt="">
-                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
-                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
-                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                    <img src="esmer-sekerli-brownie-kurabiye-tarifi.jpg" class="card-img-top p-0 m-0 h-[1280px]" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
                 </div>
             </div>
             <div class="col-md-4 h-[500px]">
                 <div class="card w-100 col-md-4 rounded border-none h-[250px]">
-                <img src="guzelavrat-otu-shutter.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
-                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
-                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
-                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                    <img src="guzelavrat-otu-shutter.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
                 </div>
             </div>
             <div class="col-md-4 h-[500px]">
                 <div class="card w-100 col-md-4 rounded border-none h-[250px]">
-                <img src="ananas-shutter2.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
-                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
-                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
-                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                    <img src="ananas-shutter2.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
                 </div>
             </div>
             <div class="col-md-4 h-[500px]">
                 <div class="card w-100 col-md-4 rounded border-none h-[250px]">
-                <img src="esmer-sekerli-brownie-kurabiye-tarifi.jpg" class="card-img-top p-0 m-0 h-[1280px]" alt="">
-                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
-                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
-                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                    <img src="esmer-sekerli-brownie-kurabiye-tarifi.jpg" class="card-img-top p-0 m-0 h-[1280px]" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                    <img src="guzelavrat-otu-shutter.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                    <img src="ananas-shutter2.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                    <img src="esmer-sekerli-brownie-kurabiye-tarifi.jpg" class="card-img-top p-0 m-0 h-[1280px]" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                    <img src="guzelavrat-otu-shutter.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                    <img src="ananas-shutter2.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                    <img src="esmer-sekerli-brownie-kurabiye-tarifi.jpg" class="card-img-top p-0 m-0 h-[1280px]" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                    <img src="guzelavrat-otu-shutter.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                    <img src="ananas-shutter2.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                    <img src="esmer-sekerli-brownie-kurabiye-tarifi.jpg" class="card-img-top p-0 m-0 h-[1280px]" alt="">
+                    <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                    <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                    <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
                 </div>
             </div>
 
 
 
 
-        </div>
         </div>
     
+    </div>
+    </div>    
     <footer class="bg-gray-700">
         <div class="container h-[300px] text-white text-center">
             <h1 class="py-3 fw-bold">Yemek.com</h1>
-            <div class=" w-[400px] h-[150px] inline-block">
+            <div class=" w-[400px] h-auto inline-block">
                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quidem nam ut cum velit omnis officia consequuntur tempora nobis ipsam rem vel laudantium quod atque dolor nostrum provident quos vero.</p>
             </div>
            
