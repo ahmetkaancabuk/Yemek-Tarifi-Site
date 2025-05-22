@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,10 +10,25 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    flex: 1 0 auto; /* Esnek büyüme */
+    min-height: 0; /* Flex konteynerlerde taşmayı önlemek için */
+  }
+</style>
 </head>
 
-<body class="h-100">
-    
+<body >
+
     <header>
         <div class="container ">
 
@@ -69,8 +84,7 @@
             </div>
         </div>
     </header>
-    <main class="h-100 flex-1">
-        
+    
         <div class="container ">
 
             <div class="d-flex flex-wrap align-items-center mt-4 col-12">
@@ -187,7 +201,7 @@
             <h2 class="mx-3 mb-0  fs-2 text-center">Tariflerimiz </h2>
             <div class="border-top flex-grow-1"></div>
         </div>
-        <div class="row  h-72">
+        <div class="row  h-autol">
             <div class="col-md-4 h-[500px]">
                 <div class="card w-100 col-md-4 rounded border-none h-[250px]">
                 <img src="guzelavrat-otu-shutter.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
@@ -212,20 +226,47 @@
                 <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
                 </div>
             </div>
-            
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                <img src="guzelavrat-otu-shutter.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                <img src="ananas-shutter2.jpg" class="card-img-top p-0 m-0 img-fluid" alt="">
+                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
+            <div class="col-md-4 h-[500px]">
+                <div class="card w-100 col-md-4 rounded border-none h-[250px]">
+                <img src="esmer-sekerli-brownie-kurabiye-tarifi.jpg" class="card-img-top p-0 m-0 h-[1280px]" alt="">
+                <h1 class="card-title text-2xl px-2 pt-2">Yemek Kategorisi</h1>
+                <h1 class="card-body text-2xl px-2">Yemek Adı Lorem ipsum dolor sit amet.</h1>
+                <h1 class="card-footer text-2xl px-2 border-none bg-transparent">Yemek Kategorisi</h1>
+                </div>
+            </div>
 
 
 
 
         </div>
         </div>
-    </main>
-    <footer>
-        <div class="bg-gray-600 container-fluid h-32">
-araba
+    
+    <footer class="bg-gray-700">
+        <div class="container h-[300px] text-white text-center">
+            <h1 class="py-3 fw-bold">Yemek.com</h1>
+            <div class=" w-[400px] h-[150px] inline-block">
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quidem nam ut cum velit omnis officia consequuntur tempora nobis ipsam rem vel laudantium quod atque dolor nostrum provident quos vero.</p>
+            </div>
+           
         </div>
-
     </footer>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
