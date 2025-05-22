@@ -16,5 +16,22 @@ namespace Yemek_Tarifi_Site.Controllers
         {
             _userManager = userManager;
         }
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register([FromBody] RegisterDto model)
+        {
+            var user = new ApplicationUser
+            {
+                UserName = model.UserName,
+                Email = model.Email,
+                FullName = model.FullName
+            };
+            var result = await _userManager.CreateAsync(user, model.Passaword);
+
+            if (result.Succeeded)
+            {
+                return Ok("Kayit başarili");
+            }
+            return BadRequest(result.Errors);
+        }
     }
 }

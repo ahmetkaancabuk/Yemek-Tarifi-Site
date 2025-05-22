@@ -103,3 +103,11 @@ C:\Users\basci\Documents\GitHub\Yemek-Tarifi-Site\obj\Debug\net8.0\refint\Yemek-
 C:\Users\basci\Documents\GitHub\Yemek-Tarifi-Site\obj\Debug\net8.0\Yemek-Tarifi-Site.pdb
 C:\Users\basci\Documents\GitHub\Yemek-Tarifi-Site\obj\Debug\net8.0\Yemek-Tarifi-Site.genruntimeconfig.cache
 C:\Users\basci\Documents\GitHub\Yemek-Tarifi-Site\obj\Debug\net8.0\ref\Yemek-Tarifi-Site.dll
+C:\Users\basci\Documents\Github\Yemek-Tarifi-Site\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\basci\Documents\Github\Yemek-Tarifi-Site\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\basci\Documents\Github\Yemek-Tarifi-Site\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\basci\Documents\Github\Yemek-Tarifi-Site\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\basci\Documents\Github\Yemek-Tarifi-Site\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\basci\Documents\Github\Yemek-Tarifi-Site\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\basci\Documents\Github\Yemek-Tarifi-Site\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\basci\Documents\Github\Yemek-Tarifi-Site\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
